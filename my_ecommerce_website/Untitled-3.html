@@ -1,10 +1,9 @@
-            
+
 <!-- saved from url=(0075)file:///D:/Capability%20%2B%20Personal/my_ecommerce_website/Untitled-3.html -->
 
 <!-- To check how to use in mobile and in desktop
         Desktop - stack in on row, margin left and right how many px?
         Mobile - one columns, give 10px right and lefht
-
 -->
 
 <html>
@@ -114,7 +113,7 @@
                 <p>ITEM DESCRIPTION</p>
                 <p style = "font-size: 200%;">ITEM PRICE</p>
             </div>
-            <div class = "item_1" style="display:inline-block;">
+            <div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
                 <p>ITEM 1</p>
                 <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
                 <p>ITEM DESCRIPTION</p>
@@ -128,9 +127,16 @@
         <div class = "Line_3"></div>
     </div>
 <script>
-    
+    function clickhere(x){
+	console.log(x.getElementsByTagName('p')[2]);
+	x.getElementsByTagName('p')[2].innerHTML = "TEKAN DAH";
+	
+	x.style.height = "10%";
+	console.log(x);
+	}
 
 </script>
 
 </body>
 </html>
+
