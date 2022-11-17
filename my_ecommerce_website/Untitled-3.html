@@ -8,7 +8,9 @@
 
 <html>
     <head>
-        
+        <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <style>
         body{
@@ -76,64 +78,78 @@
         <p> Test3</p>
     </div>
     <div class = "Item_List">
+
         <div class = "Line_1" style="-webkit-flex-flow: wrap row;flex-flow: row wrap;margin-right:10px;">
-            <div class = "item_1" style="display:inline-block;">
-                <p>ITEM 1</p>
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
-                <p>ITEM DESCRIPTION</p>
-                <p style = "font-size: 200%;">ITEM PRICE</p>
-            </div>
-            <div class = "item_1" style="display:inline-block;">
-                <p>ITEM 1</p>
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
-                <p>ITEM DESCRIPTION</p>
-                <p style = "font-size: 200%;">ITEM PRICE</p>
-            </div>
-            <div class = "item_1" style="display:inline-block;">
-                <p>ITEM 1</p>
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
-                <p>ITEM DESCRIPTION</p>
-                <p style = "font-size: 200%;">ITEM PRICE</p>
-            </div>
-            <div class = "item_1" style="display:inline-block;">
-                <p>ITEM 1</p>
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
-                <p>ITEM DESCRIPTION</p>
-                <p style = "font-size: 200%;">ITEM PRICE</p>
-            </div>
-            <div class = "item_1" style="display:inline-block;">
-                <p>ITEM 1</p>
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
-                <p>ITEM DESCRIPTION</p>
-                <p style = "font-size: 200%;">ITEM PRICE</p>
-            </div>
-            <div class = "item_1" style="display:inline-block;">
-                <p>ITEM 1</p>
-                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
-                <p>ITEM DESCRIPTION</p>
-                <p style = "font-size: 200%;">ITEM PRICE</p>
-            </div>
             <div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
                 <p>ITEM 1</p>
                 <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
-                <p>ITEM DESCRIPTION</p>
+                <p class = "description" style = "display:none">ITEM DESCRIPTION</p>
                 <p style = "font-size: 200%;">ITEM PRICE</p>
             </div>
- 
+		
+		<div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
+                <p>ITEM 1</p>
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
+                <p class = "description" style = "display:none">ITEM DESCRIPTION</p>
+                <p style = "font-size: 200%;">ITEM PRICE</p>
+            </div>
+            
+		<div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
+                <p>ITEM 1</p>
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
+                <p class = "description" style = "display:none">ITEM DESCRIPTION</p>
+                <p style = "font-size: 200%;">ITEM PRICE</p>
+            </div>
+            
+		<div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
+                <p>ITEM 1</p>
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
+                <p class = "description" style = "display:none">ITEM DESCRIPTION</p>
+                <p style = "font-size: 200%;">ITEM PRICE</p>
+            </div>
+            
+		<div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
+                <p>ITEM 1</p>
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
+                <p class = "description" style = "display:none">ITEM DESCRIPTION</p>
+                <p style = "font-size: 200%;">ITEM PRICE</p>
+            </div>
 
+            <div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
+                <p>ITEM 1</p>
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
+                <p class = "description" style = "display:none">ITEM DESCRIPTION</p>
+                <p style = "font-size: 200%;">ITEM PRICE</p>
+            </div>
+
+            <div class = "item_1" style="display:inline-block;" onClick = "clickhere(this)">
+                <p>ITEM 1</p>
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
+                <p class = "description" style = "display:none">ITEM DESCRIPTION</p>
+                <p style = "font-size: 200%;">ITEM PRICE</p>
+		<div class = "icons">
+			<button class="bi bi-arrows-angle-expand"></button>
+			<button style = "color:gree" class="bi bi-whatsapp"></button>
+            </div>
         </div>
-        
-        <div class = "Line_2"></div>
-        <div class = "Line_3"></div>
+
     </div>
 <script>
     function clickhere(x){
-	console.log(x.getElementsByTagName('p')[2]);
-	x.getElementsByTagName('p')[2].innerHTML = "TEKAN DAH";
-	
-	x.getElementsByTagName('img')[0].style.width = "10%";
-	console.log(x);
+	on_or_of = x.getElementsByClassName('description')[0].style.display;
+	console.log(on_or_of == 'none')
+	if	 (on_or_of == 'none'){
+		x.getElementsByClassName('description')[0].style.display = 'block';
+		x.style.width = "100%";
+	}	
+	else{
+		x.getElementsByClassName('description')[0].style.display = 'none';
+		x.style.width = "250px";
 	}
+	console.log(x.getElementsByClassName('description')[0].style.display);
+	
+	}
+	
 
 </script>
 
