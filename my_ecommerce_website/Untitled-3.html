@@ -161,10 +161,22 @@
     </div>
 <script>
     function clickhere(x){
+	all_div = document.getElementsByTagName("div");
+	/*console.log(all_div[0]);*/
+	for (let i = 0; i < all_div.lenght; i++)
+		{
+		console.log(i);
+		console.log(all_div[i]);
+		if (x != all_div[i]){
+			console.log(all_div[i])
+			all_div[i].style.display = "none";
+			}
+		}
+
 	on_or_of = x.getElementsByClassName('description')[0].style.display;
-	console.log(on_or_of == 'none')
 	if	 (on_or_of == 'none'){
 		x.getElementsByClassName('description')[0].style.display = 'block';
+		
 		x.style.width = "100%";
 	}	
 	else{
