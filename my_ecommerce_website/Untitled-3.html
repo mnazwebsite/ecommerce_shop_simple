@@ -1,4 +1,4 @@
-            
+                        
 <!-- saved from url=(0075)file:///D:/Capability%20%2B%20Personal/my_ecommerce_website/Untitled-3.html -->
 
 <!-- To check how to use in mobile and in desktop
@@ -52,10 +52,20 @@
             margin: auto;
             border: 3px solid #73AD21;
             justify-content:space-evenly;
-            margin-right: auto;
             text-align:center;
-
+	    margin-right:10px;
+            margin-top:10px;
         }
+        
+        .Item_List{
+  		/*border: 5px solid;*/
+  		margin: auto;
+		margin-left:5px;
+		margin-right:5px;
+  		width: 100%;
+  		padding: 10px;
+		}
+
         .item_1:hover{
          
          height: 40%;
@@ -160,6 +170,15 @@
 
     </div>
 <script>
+    var viewport_width = window.innerWidth;
+    all_div = document.getElementsByClassName("item_1");
+   for (let i = 0; i < all_div.length; i++)
+		{
+		console.log(i)
+		var width_new = viewport_width /5;
+		all_div[i].style.width= width_new.toString().concat("px");
+		console.log(all_div[i].style.width);
+		}
     function clickhere(x){
 	all_div = document.getElementsByClassName("item_1");
 	/*console.log(all_div[0]);*/
