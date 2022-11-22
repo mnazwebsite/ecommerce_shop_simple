@@ -1,4 +1,4 @@
-
+            
 <!-- saved from url=(0075)file:///D:/Capability%20%2B%20Personal/my_ecommerce_website/Untitled-3.html -->
 
 <!-- To check how to use in mobile and in desktop
@@ -161,9 +161,9 @@
     </div>
 <script>
     function clickhere(x){
-	all_div = document.getElementsByTagName("div");
+	all_div = document.getElementsByClassName("item_1");
 	/*console.log(all_div[0]);*/
-	for (let i = 0; i < all_div.lenght; i++)
+	for (let i = 0; i < all_div.length; i++)
 		{
 		console.log(i);
 		console.log(all_div[i]);
@@ -182,6 +182,10 @@
 	else{
 		x.getElementsByClassName('description')[0].style.display = 'none';
 		x.style.width = "250px";
+		for (let i = 0; i < all_div.length; i++)
+		{
+		all_div[i].style.display = "inline-block";
+		}
 	}
 	console.log(x.getElementsByClassName('description')[0].style.display);
 	
@@ -192,4 +196,3 @@
 
 </body>
 </html>
-
