@@ -50,7 +50,7 @@
         .item_1{
             width: 250px;
             margin: auto;
-            border: 3px solid #73AD21;
+            border: 3px solid black;
             justify-content:space-evenly;
             text-align:center;
 	    margin-right:10px;
@@ -169,6 +169,7 @@
         </div>
 
     </div>
+
 <script>
     var viewport_width = window.innerWidth;
     all_div = document.getElementsByClassName("item_1");
@@ -201,7 +202,8 @@
 	}	
 	else{
 		x.getElementsByClassName('description')[0].style.display = 'none';
-		x.style.width = "250px";
+		x.style.width = width_new.toString().concat("px");
+		
 		x.style.fontSize = "100%";
 		for (let i = 0; i < all_div.length; i++)
 		{
@@ -216,4 +218,4 @@
 </script>
 
 </body>
-</html>
+</html>            
